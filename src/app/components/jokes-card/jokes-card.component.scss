@@ -1,0 +1,51 @@
+.card__wrapper {
+  border: 1px #3a3c45 solid;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 5px 0;
+  background-color: #eeedeb;
+  font-family: Ubuntu, sans-serif;
+}
+
+.tell__btn,
+.del__btn {
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 5px;
+  cursor: pointer;
+  transition: 0, 4s;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+
+  &:active {
+    box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.5);
+  }
+}
+
+.tell__btn {
+  color: #3a3c45;
+  background-color: #f6d205;
+  border: 2px solid #e7f527;
+
+  &:hover {
+    background-color: #fae77b;
+  }
+}
+
+.del__btn {
+  color: white;
+  background-color: #cf0039;
+  border: 2px solid #fb2964;
+
+  &:hover {
+    background-color: #f2517f;
+  }
+}
+
+.joke__line{
+font-size: 19px;
+font-weight: bold;
+}
+
+.answer__line{
+
+}

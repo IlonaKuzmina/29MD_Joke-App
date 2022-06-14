@@ -1,0 +1,11 @@
+<div class="card__wrapper">
+  <span class="joke__line">{{ joke?.joke }}</span>
+  <div *ngIf="tellAnswer">
+    <small class="answer__line">{{ joke?.answer }}</small>
+  </div>
+
+  <div>
+    <button (click)="togleTellAnswer()" class="tell__btn">Tell me</button>
+    <button class="del__btn">Delete</button>
+  </div>
+</div>

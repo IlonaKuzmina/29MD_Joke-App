@@ -1,0 +1,25 @@
+<form [formGroup]="jokesForm">
+  <div class="form__wrapper">
+    <div>
+      <label for="">
+        Question <br />
+        <input
+          #jokeInput
+          formControlName="joke"
+          placeholder="Enter the question"
+          class="input"
+          type="text"
+      /></label>
+    </div>
+    <div>
+      <label for="">
+        Answer <br />
+        <input 
+        formControlName="answer"
+        placeholder="Enter the punchline" class="input" type="text"
+      /></label>
+    </div>
+    <button [disabled]="jokesForm.invalid" (click)="addJoke()" class="creator__btn disabled">Creator</button>
+  </div>
+</form>
+
