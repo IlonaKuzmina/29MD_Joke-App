@@ -10,4 +10,4 @@ Tools:
 
 A small application with validation, local storage, and add and remove function.
 
-![Add_jokes_and_answers-Angular](https://user-images.githubusercontent.com/98387598/173847737-d1ad2a51-558a-470d-a17c-77d576fc44ea.gif)
+![Add_jokes_and_answers-Angular_1](https://user-images.githubusercontent.com/98387598/173851476-cc3a604c-2af0-4add-8e31-3509022a6f0c.gif)
