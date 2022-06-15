@@ -1,4 +1,4 @@
-import { Component, Input, Output,EventEmitter } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { JokesModels } from 'src/app/models/jokesModels';
 
 @Component({
@@ -8,7 +8,7 @@ import { JokesModels } from 'src/app/models/jokesModels';
 })
 export class JokesCardComponent {
   @Input() joke?: JokesModels;
-  @Output() deleteJokeEvent = new EventEmitter();
+  @Output() deleteTaskEvent = new EventEmitter<null>();
 
   tellAnswer = false;
 
@@ -18,4 +18,7 @@ export class JokesCardComponent {
     this.tellAnswer = !this.tellAnswer;
   }
 
+  deleteTask(): void {
+    this.deleteTaskEvent.emit();
+  }
 }

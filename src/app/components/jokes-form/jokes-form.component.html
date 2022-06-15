@@ -14,12 +14,18 @@
     <div>
       <label for="">
         Answer <br />
-        <input 
-        formControlName="answer"
-        placeholder="Enter the punchline" class="input" type="text"
+        <input
+          formControlName="answer"
+          placeholder="Enter the punchline"
+          class="input"
+          type="text"
       /></label>
     </div>
-    <button [disabled]="jokesForm.invalid" (click)="addJoke()" class="creator__btn disabled">Creator</button>
+    <button
+      [disabled]="jokesForm.invalid"
+      (click)="addJoke()"
+      class="creator__btn disabled">
+      Creator
+    </button>
   </div>
 </form>
-

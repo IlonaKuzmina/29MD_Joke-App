@@ -1,4 +1,11 @@
-import { Component, ElementRef, EventEmitter, OnInit, Output, ViewChild } from '@angular/core';
+import {
+  Component,
+  ElementRef,
+  EventEmitter,
+  OnInit,
+  Output,
+  ViewChild,
+} from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { JokesModels } from 'src/app/models/jokesModels';
 
@@ -31,7 +38,7 @@ export class JokesFormComponent implements OnInit {
       this.jokesForm.reset();
       this.focusInputElement();
     }
-    console.log(this.jokesForm.value)
+    console.log(this.jokesForm.value);
   }
 
   buildForm(): void {
